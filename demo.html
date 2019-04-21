@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>index</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="body">
+
+  </div>
+  <script>
+    var t = document.documentElement;
+    var clientWidth = t.getBoundingClientRect().width;
+    if (clientWidth < 750) {
+      t.style.fontSize = clientWidth / 3.75 + "px";
+    } else {
+      t.style.fontSize = "200px";
+    }
+  </script>
+  <script src="dist/index.js"></script>
+  <script src="example/test.js"></script>
+  <script>
+    Alive = Alive.default
+    Alive.GLOBAL.FPS = 30
+    var alive = new Alive({
+      data: testData,
+      container: '#body',
+      rendererType: 'dom'
+    });
+    alive.render()
+    alive.play()
+  </script>
+</body>
+
+</html>

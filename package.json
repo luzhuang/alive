@@ -1,0 +1,25 @@
+{
+  "name": "webpacktest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-chain": "^5.2.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "css-transform-to-mat4": "^1.0.4",
+    "extend": "^3.0.2",
+    "pixi.js": "^4.8.7"
+  }
+}
