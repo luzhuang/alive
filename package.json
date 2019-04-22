@@ -9,6 +9,9 @@
     "start": "webpack-dev-server"
   },
   "keywords": [],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },  
   "author": "",
   "license": "MIT",
   "devDependencies": {
